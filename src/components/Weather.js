@@ -33,6 +33,7 @@ const Weather = () => {
     const now = new Date();
     setCurrentDate(dateBuilder(now));
     const response = await getWeather(newLocation);
+    console.log(response[0].timezone);
     return response;
   }
 
