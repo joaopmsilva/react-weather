@@ -9,6 +9,7 @@ const StyledSearchBox = styled.div`
   & input {
     width: 100%;
     max-width: 280px;
+    text-align: center;
     padding: 10px 15px;
     border: none;
     outline: none;
