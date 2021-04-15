@@ -13,6 +13,7 @@ const StyledSearchBox = styled.div`
     padding: 10px 15px;
     border: none;
     outline: none;
+    caret-color: transparent;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 16px 16px 16px 16px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.3);
