@@ -35,8 +35,7 @@ export const getWeather = async (location) => {
   const weatherMain = todayWeather.weather[0].main;
   const tempMax = todayWeather.temp.max;
   const tempMin = todayWeather.temp.min;
-  const dt = todayWeather.dt;
 
-  return [{ currentTemp, weatherMain, tempMax, tempMin, dt }, placeName];
+  return [{ currentTemp, weatherMain, tempMax, tempMin }, placeName];
   
 }

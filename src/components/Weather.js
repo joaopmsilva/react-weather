@@ -19,7 +19,6 @@ const Weather = () => {
     weatherMain: '',
     tempMax: 0,
     tempMin: 0,
-    dt: 0
   });
 
   useEffect(() => {
