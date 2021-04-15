@@ -6,7 +6,7 @@ const SearchBox = ({ handleInput, handleSubmit }) => (
   <StyledSearchBox>
     <form onSubmit={(e) => { handleSubmit(e); }}>
       <input type="text" onChange={(e) => { handleInput(e); }} autoComplete="off" placeholder="Search for a city" />
-    </form>
+    </form> 
   </StyledSearchBox>
 );
 

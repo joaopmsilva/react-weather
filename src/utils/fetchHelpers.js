@@ -25,7 +25,6 @@ export const getWeather = async (location) => {
     country: geocodeResult.country
   }
 
-
   const URL = `${WEATHER_BASE}?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=metric&appid=a88a5bcfd62d1b1f09c50eb65f78aa7d`;
 
   const weatherResult = await fetch(URL).then(data => data.json()).then(result => result);
