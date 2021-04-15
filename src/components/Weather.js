@@ -18,7 +18,8 @@ const Weather = () => {
     currentTemp: 0,
     weatherMain: '',
     tempMax: 0,
-    tempMin: 0
+    tempMin: 0,
+    dt: 0
   });
 
   useEffect(() => {
@@ -37,15 +38,7 @@ const Weather = () => {
   }
 
   const setBackground = () => {
-    const now = new Date();
-    const hour = now.getHours();
-    if (hour <= 7 || hour > 18) {
-      return 'blue';
-    }
-    if (hour > 7 && hour <= 15) {
-      return 'green';
-    }
-    return 'orange';
+    return 'blue';
   }
 
   const dateBuilder = (d) => {

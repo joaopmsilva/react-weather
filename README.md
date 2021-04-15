@@ -1,6 +1,6 @@
 <div align="center">
 
-# Weather Test App
+# React Weather Test App
 
 A Weather App made with React :cloud:
 
@@ -9,7 +9,6 @@ A Weather App made with React :cloud:
 ## Available Scripts
 
 In the project directory, you can run:
-
 ### `npm start`
 
 ### `npm test`
