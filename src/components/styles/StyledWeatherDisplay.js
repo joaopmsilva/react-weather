@@ -25,6 +25,7 @@ const StyledWeatherDisplay = styled.div`
   h3 {
     font-size: 1.5rem;
     font-weight: 500;
+    margin-top: 30px;
     text-shadow: 0px 3px rgba( 0, 0, 0, 0.6);
   }
 `

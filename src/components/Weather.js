@@ -33,7 +33,22 @@ const Weather = () => {
     const now = new Date();
     setCurrentDate(dateBuilder(now));
     const response = await getWeather(newLocation);
-    console.log(response[0].timezone);
+    let weatherIcon = response[0].weatherMain;
+    switch(weatherIcon){
+      case "Thunderstorm": response[0].weatherMain = <i class='fas fa-bolt fa-3x'></i>;
+      break;
+      case "Clear": response[0].weatherMain = <i class='fas fa-sun fa-3x'></i>;
+      break;
+      case "Rain": response[0].weatherMain = <i class='fas fa-cloud-rain fa-3x'></i>;
+      break;
+      case "Snow": response[0].weatherMain = <i class='fas fa-snowflake fa-3x'></i>;
+      break;
+      case "Clouds": response[0].weatherMain = <i class='fas fa-cloud-sun fa-3x'></i>;
+      break;
+      default: response[0].weatherMain = <i class='fas fa-smog fa-3x'></i>;
+      break;
+    }
+    console.log(response);
     return response;
   }
 
